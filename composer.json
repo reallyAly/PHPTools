@@ -1,0 +1,17 @@
+{
+    "name": "aly/php-tools",
+    "autoload": {
+        "psr-4": {
+            "Aly\\PhpTools\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alysson Victor",
+            "email": "developeralysson@gmail.com"
+        }
+    ],
+    "require": {
+        "squizlabs/php_codesniffer": "^3"
+    }
+}
