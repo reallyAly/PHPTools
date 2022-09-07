@@ -1,39 +1,125 @@
 <?php
+/**
+ * PHP Version 8
+ *
+ * Student class
+ *
+ * @category Entity
+ * @package  Aly_PHPTools
+ * @author   Alysson Victor <developeralysson@gmail.com>
+ * @license  Open Source
+ * @link     github.com/reallyAly
+ */
 
 declare(strict_types=1);
 
 namespace Aly\PhpTools;
 
-class Student {
-    private string $firstname;
-    private string $lastname;
-    private int $age;
+/**
+ * Student entity class
+ *
+ * @category Entity
+ * @package  Aly_PHPTools
+ * @author   Alysson Victor <developeralysson@gmail.com>
+ * @license  Open Source
+ * @link     github.com/reallyAly
+ */
+class Student
+{
+    /**
+     * Student firstname
+     *
+     * @var string
+     */
+    private string $_firstname;
 
-    public function getFirstname(){
-        return $this->firstname;
+    /**
+     * Student lastname
+     *
+     * @var string
+     */
+    private string $_lastname;
+
+    /**
+     * Student age
+     *
+     * @var int
+     */
+    private int $_age;
+
+    /**
+     * Get method for firstname attribute
+     *
+     * @return string
+     */
+    public function getFirstname(): string
+    {
+        return $this->_firstname;
     }
 
-    public function setFirstname(string $firstname){
-        $this->firstname = $firstname;
+    /**
+     * Set method for firstname attribute
+     *
+     * @param string $firstname
+     *
+     * @return void
+     */
+    public function setFirstname(string $firstname): void
+    {
+        $this->_firstname = $firstname;
     }
 
-    public function getLastname(){
-        return $this->lastname;
+    /**
+     * Get method for lastname attribute
+     *
+     * @return string
+     */
+    public function getLastname(): string
+    {
+        return $this->_lastname;
     }
 
-    public function setLastname(string $lastname){
-        $this->lastname = $lastname;
+    /**
+     * Set method for lastname attribute
+     *
+     * @param string $lastname
+     *
+     * @return void
+     */
+    public function setLastname(string $lastname): void
+    {
+        $this->_lastname = $lastname;
     }
 
-    public function getAge(){
-        return $this->age;
+    /**
+     * Get method for age attribute
+     *
+     * @return int
+     */
+    public function getAge(): int
+    {
+        return $this->_age;
     }
 
-    public function setAge(int $age){
-        $this->age = $age;
+    /**
+     * Set method for age attribute
+     *
+     * @param int $age
+     *
+     * @return void
+     */
+    public function setAge(int $age): void
+    {
+        $this->_age = $age;
     }
 
-    public function isOverEighteenYearsOld(){
-        return $this->age > 18;
+    /**
+     * Method to check if the student is over eighteen years old
+     *
+     * @return bool
+     */
+    public function isOverEighteenYearsOld(): bool
+    {
+        return $this->_age > 18;
     }
 }
